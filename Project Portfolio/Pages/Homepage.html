@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        
+        .sidenav
+        {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+        }
+
+        .sidenav a
+        {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+        }
+
+        .sidenav a:hover
+        {
+        color: #f1f1f1;
+        }
+
+        .sidenav .closebtn
+        {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+        }
+
+        @media screen and (max-height: 450px)
+        {
+        .sidenav {padding-top: 15px;}
+        .sidenav a {font-size: 18px;}
+        }
+
+        h1{text-align: center;}
+        h2{text-align: center;}
+        p{text-align: center;}
+
+        .myProject
+        {
+        border: 2px outset red;
+        background-color: rgb(255, 195, 0);    
+        text-align: center;
+        }
+
+        .myProject2
+        {
+        border: 2px outset red;
+        background-color: rgb(255, 195, 0);    
+        text-align: center;
+        }
+        
+        body {font-family: "Lato", sans-serif;}
+
+    </style>
+</head>
+  
+<body style="background-color:rgb(216, 223, 226);">
+            <!-- SideNav menu -->
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="Homepage.html"><img src="Content/LudoProfile.jpeg" alt="Ludo" width="50" height="50"> </a>
+                <a href="Learning.html">Learning</a>
+                <a href="CV.html">CV</a>
+            </div>
+
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+
+        <!-- SideNav open/close size -->
+    <script>
+        function openNav() 
+        {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+        }
+        
+        function closeNav()
+        {
+            document.getElementById("mySidenav").style.width = "0";
+            document.body.style.backgroundColor = "white";
+        }
+    </script>
+
+    
+    <!-- Navigation links & title -->
+    <header>
+        <h1>Ludovico Bitti</h1>
+    </header>
+
+    <!-- About Me Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+          Hi, my name is Ludovico. I am a student video game developer, though I will remain a student for the rest of my life. No matter how much you think you know, there is always more to learn.
+
+          I am passionate about what I do and I have never been afraid to show it. Our passions make us who we are. 
+          
+          One of my passions is videogames.
+        </p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <!-- Projects's brief descriptions and links to their details. -->
+        <div class ="myProject">
+            <h3>Project 1</h3>
+            <p>
+                Description of Project 1.
+            </p>
+            <a href="#">Link to Project 1</a>
+        </div>
+
+        <div class="myProject2">
+            <h3>Project 2</h3>
+            <p>
+                Description of Project 2.
+            </p>
+            <a href="#">Link to Project 2</a>
+        </div>
+
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>
+            You can reach me at: l.bitti98@gmail.com
+        </p>
+    
+         
+
+</body>
+</html>
